@@ -1,11 +1,53 @@
-// Objetos são conjuntos de variáveis e funções, mas no objeto elas possuem outros nomes: Propriedades (variáveis) e métodos (funções).
+let idade = 21;
+
+if(idade >= 18 && idade <= 150){
+    console.log('Maior de idade!');
+} else if(idade <= 17 && idade >= 0){
+    console.log('Menor de idade!');
+} else{
+    console.log('Idade inválida!');
+}
+
+// ========================
+
+let nome = 'Gabriel';
 
 
-let pessoa = {
-    nome: 'Gabriel',
-    idade: 21,
-    sexo: 'Masculino'
+if(nome != 'Gabriel'){
+    console.log('Você não é o Gabriel');
+} else{
+    console.log('Olá Gabriel!');
 };
 
 
-console.log(`Olá, sou o ${pessoa.nome} tenho ${pessoa.idade} de idade e sou do sexo ${pessoa.sexo}.`);
+/* ======================================================== */
+
+
+// OPERADORES LÓGICOS
+
+// && = e
+// || = ou
+
+
+/* ======================================================== */
+
+
+// Usando o switch case
+
+let corFavorita = 'roxo';
+
+
+switch(corFavorita){
+    case 'roxo':
+        console.log('Roxo é muito bonito!');
+        break;
+    case 'azul':
+        console.log('Azul é muito bonito!');
+        break;
+    case 'vermelho':
+        console.log('Vermelho é muito bonito!');
+        break;
+    default:
+        console.log('Esta cor é muito bonita!');
+        break;
+};
