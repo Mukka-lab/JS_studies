@@ -26,3 +26,13 @@ function mostrarEsporte(){
 
 
 mostrarEsporte();
+
+
+/* =============================================== */
+/* =============================================== */
+
+// Diferenças entre *let* e *const*:
+
+// Const mantém o escopo no bloco, impede a redeclaração e impede a modificação do valor da variável, evitando bugs no código.
+
+// Let mantém o escopo no bloco e impede a redeclaração, mas permite a alteração do valor da variável.
