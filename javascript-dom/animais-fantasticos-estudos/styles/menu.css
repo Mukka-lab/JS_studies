@@ -1,0 +1,20 @@
+.menu{
+    grid-column: 3 / 5;
+    margin: 2rem 0;
+    background-color: #7EA656;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}

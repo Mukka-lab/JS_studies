@@ -1,0 +1,64 @@
+.grid-section{
+    grid-column: 2 / 4;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+    gap: 20px;
+    margin-bottom: 4rem;
+}
+
+.titulo{
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
+}
+
+.animais h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    color: #3B7302;
+}
+
+.animais h2::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #7EA656;
+}
+
+
+.animais p{
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.animais-lista{
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.animais-lista::-webkit-scrollbar{
+    width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb{
+    background-color: #3B7302;
+    border-left: 4px solid #DCEEF2;
+}
+
+
+.desc-animal{
+    grid-column: 3;
+}
+
+.desc-animal section{
+    margin-bottom: 3rem;
+}
