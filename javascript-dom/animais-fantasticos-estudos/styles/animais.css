@@ -45,6 +45,10 @@
     grid-column: 2;
 }
 
+.animais-lista:hover{
+    cursor: pointer;
+}
+
 .animais-lista::-webkit-scrollbar{
     width: 18px;
 }

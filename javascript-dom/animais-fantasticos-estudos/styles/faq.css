@@ -9,6 +9,10 @@
     color: #3B7302;
 }
 
+.faq-lista dt:hover{
+    cursor: pointer;
+}
+
 .faq-lista dt::before{
     content: '';
     display: inline-block;
