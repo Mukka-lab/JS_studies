@@ -108,3 +108,5 @@ menu.classList.toggle('ativo'); // Se existir *remove*, se não existir *adicion
 menu.classList.contains('ativo'); // Retorna true ou false
 menu.classList.replace('ativo', 'inativo'); // Substitui a classe
 console.log(menu.classList);
+
+// Finalizado
