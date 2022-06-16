@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    color: greenyellow;
+}
+
+
+.area{
+    display: flex;
+    justify-content: center;
+}
+
+.area2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+}
+
+
+.roxo{
+    background-color: blueviolet;
+}
