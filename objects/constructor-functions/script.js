@@ -127,6 +127,7 @@ Dom.seletor = 'ul';
 
 /* ========================================================= */
 
+/*
 function Dom(seletor){
     this.element = function(){
         return document.querySelector(seletor);
@@ -139,3 +140,4 @@ function Dom(seletor){
 
 const li = new Dom('li');
 const ul = new Dom('ul');
+*/
