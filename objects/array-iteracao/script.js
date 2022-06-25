@@ -252,3 +252,136 @@ console.log(frutasLeft); // Maçã Uva Manga
 /* ========================================================== */
 /* ========================================================== */
 
+// [].some()
+// [].some(), se pelo menos um return da iteração for truthy, ele retorna true
+
+/*
+const frutas = ['Maçã', 'Uva', 'Manga'];
+
+const temManga = frutas.some((fruta) => {
+    return fruta === 'Manga';
+});
+
+console.log(temManga); // true
+*/
+
+/* ========================================================== */
+
+/*
+function maiorQue100(numero){
+    return numero > 100;
+};
+
+const numeros = [6, 8, 20, 28, 99, 85];
+const temMaior = numeros.some(maiorQue100);
+
+console.log(temMaior); // false
+*/
+
+
+
+/* ========================================================== */
+/* ========================================================== */
+
+
+// [].every()
+// [].every(), se todos os returns das iterações forem truthy, o método irá retornar true. Se pelo menos um for falsy, ele irpa retornar falso.
+
+/*
+const numeros = [2, 5, 800, 100, 20];
+const maiorQue1 = numeros.every((numero) => numero > 1);
+const menorQue1 = numeros.every((numero) => numero < 100);
+
+console.log(maiorQue1); // true (Pois todos os returns são truthy)
+console.log(menorQue1); // false (Pois um return é falsy)
+*/
+
+
+/* ========================================================== */
+/* ========================================================== */
+
+// [].find() - [].findIndex()
+// [].find() retorna o valor atual da primeira iteração que retornar um valor truthy.
+// [].findIndex() Ao invés de retornar o valor, retorna o index desse valor na array.
+
+/*
+const frutas = ['Abacate', 'Uva', 'Manga'];
+
+
+const buscaUva = frutas.findIndex((fruta) => {
+    return fruta === 'Uva';
+});
+
+console.log(buscaUva); // 1
+*/
+
+/* ========================================================== */
+
+/*
+const numeros = [2, 5, 800, 100, 20];
+
+
+const buscaMaior50 = numeros.find((numero) => numero > 50);
+
+console.log(buscaMaior50); // 800 (Pois é o primeiro número da array que é maior que 50)
+*/
+
+
+
+/* ========================================================== */
+/* ========================================================== */
+
+
+// [].filer()
+// [].filter(), retorna uma array com uma lista de valores que durante a sua iteração retornaram um valor truthy.
+
+/*
+const numeros = [2, 8, 92, '', 58, 180, null];
+const limpaArray = numeros.filter((numero) => {
+    return numero;
+});
+
+console.log(limpaArray); // [2, 8, 92, 58, 180]
+*/
+
+/* ========================================================== */
+
+/*
+const numeros = [2, 8, 92, 58, 180];
+const buscaMaior50 = numeros.filter((numero) => numero > 50);
+
+console.log(buscaMaior50); // [92, 58, 180]
+*/
+
+
+
+/* ========================================================== */
+/* ========================================================== */
+
+
+// filter em objetos
+
+/*
+const funcionarios = [
+    {
+        nome: 'João',
+        salario: 3400,
+    },
+    {
+        nome: 'Maria',
+        salario: 3800,
+    },
+    {
+        nome: 'Joana',
+        salario: 4200,
+    },
+];
+
+
+const salarioAlto = funcionarios.filter((funcionario) => {
+    return funcionario.salario > 3500;
+});
+
+
+console.log(salarioAlto); // {nome: 'Maria', salario: 3800}, {nome: 'Joana', salario: 4200}
+*/
